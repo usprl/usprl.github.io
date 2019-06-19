@@ -1,0 +1,15 @@
+<section class="entity entity-paragraphs-item paragraphs-item-text-mit-bild paragraphs-item-5132 links" about="" typeof="" id="paragraphs-item-5132">
+<div class="container">
+  <h2 class="field-section-titel">{{include.title}}</h2>
+
+  <div class="field-section-text">
+    <p>von {%- if entry.authors.size == 2 %}
+      {{ include.authors | join: " & " }}
+    {% else %}
+      {{ include.authors | join: ", " }}
+    {% endif %}<br>
+    erschienen in: {{ include.release | xml_escape }}. <a href="{{ include.link }}" class="ext" target="_blank">More information<span class="ext"><span class="element-invisible"> (Link ist extern)</span></span></a></p>
+    <p><em>"{{ include.comment }}"</em></p>
+  </div>
+</div>
+</section>
