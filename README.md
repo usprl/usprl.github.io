@@ -35,15 +35,15 @@ To create a new entry, just copy our template file [_literature/_template.md] an
 
 The template includes all infomation need to describe the literature entry in the YAML-header of the markdown file. Here is a description of are all the required parameters in the file:
 
-Parameter  | Type                             | Description
------------|----------------------------------|----------------------------------------------------------------------------------------------------------------
-title      | String                           | The title of the publication
-authors    | List[String]                     | All Authors of the publication (First and last name)
-release    | String                           | Details of corresponding publication (e.g. Conference, year, publisher)
-categories | List[String]                     | All categories matching this publication
-keywords   | List[String]                     | All keywords matching this publication (e.g. taken from the publication itself)
-link       | String                           | URL linking to the publication (preferably the Open Access version if available)
-comment    | List[`de`: String, `en`: String] | Comments of the German UPA regarding the publication in German (list entry `de`) and English (list entry `en`).
+Parameter  | Type         | Description
+-----------|--------------|---------------------------------------------------------------------------------
+title      | String       | The title of the publication
+authors    | List[String] | All Authors of the publication (First and last name)
+release    | String       | Details of corresponding publication (e.g. Conference, year, publisher)
+categories | List[String] | All categories matching this publication
+keywords   | List[String] | All keywords matching this publication (e.g. taken from the publication itself)
+link       | String       | URL linking to the publication (preferably the Open Access version if available)
+comment    | String       | Comment regarding the publication
 
 
 ### Publish to the web
